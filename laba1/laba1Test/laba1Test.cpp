@@ -6,8 +6,8 @@
 
 TEST_CASE("ArrNoRepeat")
 	{
-		char example[] = "qwe--rty";
-		char shouldbe[] = "qwe--rty*";
+		char example[100] = "qwe--rty";
+		char shouldbe[100] = "qwe--rty*";
 		arrProcess(example);
 		bool ok = true;
 		for (int i = 0; i < strlen(shouldbe) - 1; i++)
@@ -40,8 +40,8 @@ TEST_CASE("ArrWithRepeat")
 
 TEST_CASE("NoRepeatString")
 {
-	char example[] = "qwe--rty";
-	char shouldbe[] = "qwe--rty*";
+	char example[100] = "qwe--rty";
+	char shouldbe[100] = "qwe--rty*";
 	strProcess(example);
 	bool ok = true;
 	for (int i = 0; i < strlen(shouldbe) - 1; i++)
